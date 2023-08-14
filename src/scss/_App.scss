@@ -1,0 +1,27 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  text-align: center;
+
+  .app-title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .selected-movie {
+    text-align: center;
+
+    img {
+      max-width: 100%;
+      height: auto;
+      margin: 1rem 0;
+    }
+
+    .overview {
+      margin-top: 1rem;
+    }
+  }
+}
