@@ -28,16 +28,12 @@ const MovieDetails = ({ match }) => {
   const [movieDetails, setMovieDetails] = useState(null);
   const { id } = match.params;
 
-  useEffect(() => {
-    // Fetch movie details using the 'id' parameter
-    // Set the fetched details to the 'movieDetails' state
-  }, [id]);
+  useEffect(() => {}, [id]);
 
   if (!movieDetails) {
     return <div>Loading...</div>;
   }
 
-  // Check if 'posterUrl' is available before rendering the image
   const movieImage = movieDetails.posterUrl ? (
     <img src={movieDetails.posterUrl} alt={movieDetails.title} />
   ) : null;

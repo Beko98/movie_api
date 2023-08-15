@@ -47,7 +47,6 @@
 import React from "react";
 
 const MovieList = ({ movies, onSelect }) => {
-  // Filter out movies without a 'poster_path'
   const filteredMovies = movies.filter((movie) => movie.poster_path);
 
   return (

@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "./scss/_reset.scss";
 import "./scss/_MovieList.scss";
 import "./scss/_App.scss";
 import "./scss/_SearchForm.scss";
@@ -26,10 +27,16 @@ function App() {
       <h1>Movie Search App</h1>
       <SearchForm onSearch={handleSearch} />
       {selectedMovie ? (
-        <div>
-          <h2>{selectedMovie.title}</h2>
+        <div className="chosenMovieDiv">
           <img src={selectedMovie.posterUrl} alt={selectedMovie.title} />
-          <p>{selectedMovie.overview}</p>
+          <div className="description">
+            <h2>{selectedMovie.title}</h2>
+            <h3>{selectedMovie.overview}</h3>
+            <div className="date-rating">
+              <p>Release Date: {selectedMovie.release_date}</p>
+              <p>Rating: {selectedMovie.vote_average}</p>
+            </div>
+          </div>
         </div>
       ) : (
         <MovieList movies={movies} onSelect={handleSelectMovie} />

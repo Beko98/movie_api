@@ -6,6 +6,52 @@
   height: 100%;
   text-align: center;
 
+  h1 {
+    font-size: 45px;
+    margin: 100px 0 40px;
+  }
+
+  .chosenMovieDiv {
+    display: flex;
+    align-items: center;
+    margin: 100px auto;
+    width: 80%;
+    .date-rating {
+      display: flex;
+      justify-content: space-around;
+      p {
+        width: 33%;
+        height: 33px;
+        background-color: rgb(23, 72, 23);
+        padding-top: 15px;
+        border-radius: 10%;
+        color: rgb(255, 189, 65);
+        font-size: 18px;
+      }
+    }
+    .description {
+      width: 50%;
+      margin-left: 150px;
+      h2 {
+        margin-bottom: 100px;
+      }
+      h3 {
+        margin-bottom: 100px;
+        line-height: 1.6;
+        font-size: 18px;
+        color: rgb(118, 118, 118);
+        text-align: start;
+      }
+    }
+    img {
+      width: 25%;
+      border-radius: 5%;
+    }
+    h2 {
+      font-size: 30px;
+    }
+  }
+
   .app-title {
     font-size: 2rem;
     margin-bottom: 1rem;
@@ -25,3 +71,61 @@
     }
   }
 }
+
+// .App {
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+//   justify-content: center;
+//   height: 100%;
+//   text-align: center;
+
+//   .chosenMovieDiv {
+//     display: flex;
+//     align-items: center;
+//     margin: 2rem auto;
+
+//     img {
+//       max-width: 100%;
+//       height: auto;
+//       margin-right: 2rem;
+//       box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+//     }
+
+//     .movie-details {
+//       flex: 1;
+//       display: flex;
+//       flex-direction: column;
+//       align-items: flex-start;
+
+//       h2 {
+//         font-size: 30px;
+//         margin: 0 0 1rem;
+//       }
+
+//       p {
+//         margin: 0;
+//       }
+//     }
+//   }
+
+//   .app-title {
+//     font-size: 2rem;
+//     margin-bottom: 1rem;
+//   }
+
+//   .selected-movie {
+//     text-align: center;
+
+//     img {
+//       max-width: 100%;
+//       height: auto;
+//       margin: 1rem 0;
+//       box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+//     }
+
+//     .overview {
+//       margin-top: 1rem;
+//     }
+//   }
+// }
