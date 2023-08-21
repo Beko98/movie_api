@@ -25,6 +25,7 @@ function App() {
   return (
     <div className="App">
       <h1>Movie Search App</h1>
+
       <SearchForm onSearch={handleSearch} />
       {selectedMovie ? (
         <div className="chosenMovieDiv">

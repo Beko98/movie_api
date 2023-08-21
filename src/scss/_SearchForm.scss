@@ -1,36 +1,5 @@
-// .search-form {
-//   display: flex;
-//   flex-direction: column;
-//   align-items: center;
-//   margin-bottom: 20px;
-
-//   input {
-//     padding: 0.5rem;
-//     font-size: 1rem;
-//     border: 1px solid #ccc;
-//     border-radius: 4px;
-//     margin-bottom: 0.5rem;
-//   }
-
-//   button {
-//     padding: 0.5rem 1rem;
-//     font-size: 1rem;
-//     background-color: #007bff;
-//     color: white;
-//     border: none;
-//     border-radius: 4px;
-//     cursor: pointer;
-//   }
-// }
-
-// SearchForm.scss
-
 .search-container {
   position: relative;
-
-  .search {
-    /* Your existing input styles */
-  }
 
   .suggestions {
     position: absolute;
